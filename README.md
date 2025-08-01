@@ -21,7 +21,7 @@ A modern, responsive cleaning service website built with React, TypeScript, and 
 - 🎨 **Pixel-Perfect Design** - Faithful implementation of Figma design
 - 📱 **Fully Responsive** - Works seamlessly on all device sizes
 - 🚀 **Smooth Animations** - GSAP-powered scroll animations and interactions
-- ⚡ **Modern Tech Stack** - React 18, TypeScript, Tailwind CSS
+- ⚡ **Modern Tech Stack** - React 18, TypeScript, Vite, Tailwind CSS
 - 🎯 **Professional UX** - Clean navigation and intuitive user flow
 - 📧 **Contact Form** - Functional contact form with validation
 - 🌟 **SEO Optimized** - Clean HTML structure and meta tags
@@ -29,7 +29,6 @@ A modern, responsive cleaning service website built with React, TypeScript, and 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
 - **React 18** - Modern React with hooks
 - **TypeScript** - Type-safe development
 - **Vite** - Fast build tool and dev server
@@ -51,51 +50,76 @@ A modern, responsive cleaning service website built with React, TypeScript, and 
 ## 🚀 Quick Start
 
 ### Prerequisites
-
-- Node.js (v16 or higher)
-- npm or yarn package manager
+- Node.js 16+ and npm/yarn/pnpm
 
 ### Installation
 
 1. **Clone the repository**
-
    ```bash
-   git clone https://github.com/yourusername/yeldy-cleaning-website.git
-   cd yeldy-cleaning-website
+   git clone https://github.com/yourusername/cleaning-service-website.git
+   cd cleaning-service-website
    ```
 
 2. **Install dependencies**
-
    ```bash
    npm install
+   # or
+   yarn
+   # or
+   pnpm install
    ```
 
-3. **Start development server**
+3. **Environment Setup**
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_API_URL=your_api_url_here
+   ```
 
+4. **Development Server**
    ```bash
    npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
    ```
+   Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
-4. **Open your browser**
-   ```
-   http://localhost:8080
-   ```
+## 🏗️ Building for Production
 
-## 📦 Build & Deployment
-
-### Development
+### Development Commands
 
 ```bash
-npm run dev          # Start dev server with hot reload
-npm run typecheck    # Run TypeScript type checking
-npm test            # Run test suite
+# Start development server
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+
+# Run TypeScript type checking
+npm run typecheck
+
+# Run tests
+npm test
 ```
 
 ### Production Build
 
 ```bash
-npm run build       # Build for production
-npm start          # Start production server
+# Build for production
+npm run build
+# or
+yarn build
+# or
+pnpm build
+
+# Preview production build locally
+npm run preview
+# or
+yarn preview
+# or
+pnpm preview
 ```
 
 ### Build Output
@@ -225,35 +249,10 @@ gsap.fromTo(
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/new-feature`
-3. Commit changes: `git commit -am 'Add new feature'`
-4. Push to branch: `git push origin feature/new-feature`
-5. Submit a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Oki Abrian**
-
-- Portfolio: [Your Portfolio URL]
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn Profile]
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 🙏 Acknowledgments
 
-- Design inspiration from modern cleaning service websites
-- GSAP for incredible animation capabilities
-- Tailwind CSS for rapid styling
-- React community for excellent documentation
-
----
-
-### 📞 Get In Touch
-
-If you're interested in hiring me for similar projects or have any questions about this implementation, feel free to reach out!
-
-**Made with ❤️ for portfolio demonstration**
+- [Figma Design](https://www.figma.com/your-design-link) - For the beautiful design
+- [Vite](https://vitejs.dev/) - For the amazing build tool
+- [Tailwind CSS](https://tailwindcss.com/) - For the utility-first CSS framework
