@@ -2,22 +2,16 @@
   "name": "fusion-starter",
   "private": true,
   "type": "module",
-  "pkg": {
-    "assets": [
-      "dist/client/*"
-    ]
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "vercel-build": "npm run build",
+    "vercel-build": "vite build",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@vercel/node": "^3.0.4",
     "dotenv": "^17.2.0",
     "express": "^4.18.2",
     "gsap": "^3.13.0",

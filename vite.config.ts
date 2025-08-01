@@ -1,7 +1,6 @@
-import { defineConfig, loadEnv, Plugin } from "vite";
+import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { createServer } from "./server";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -9,17 +8,22 @@ export default defineConfig(({ mode }) => {
   const env = mode === 'development' ? loadEnv(mode, process.cwd(), '') : {};
 
   return {
+    root: '.',
+    publicDir: 'public',
+    base: './',
     server: {
       host: "::",
       port: 8080,
+      strictPort: true,
       fs: {
-        allow: ["./client", "./shared"],
-        deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
+        allow: ["./client", "./shared", "./public"],
+        deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**"],
       },
     },
     build: {
       outDir: "dist/client",
       emptyOutDir: true,
+      assetsDir: 'assets',
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html')
@@ -31,39 +35,18 @@ export default defineConfig(({ mode }) => {
         }
       }
     },
-    plugins: [
-      react(),
-      // Only use express plugin in development
-      mode === 'development' && expressPlugin()
-    ].filter(Boolean) as Plugin[],
+    plugins: [react()],
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./client"),
         "@shared": path.resolve(__dirname, "./shared"),
       },
     },
-    // Only define environment variables in development
-    ...(mode === 'development' && {
-      define: {
-        'process.env': {
-          ...Object.keys(env).reduce((acc, key) => {
-            acc[key] = JSON.stringify(env[key]);
-            return acc;
-          }, {} as Record<string, string>)
-        }
-      }
-    })
+    define: mode === 'development' ? {
+      'process.env': Object.entries(env).reduce((acc, [key, val]) => {
+        acc[key] = JSON.stringify(val);
+        return acc;
+      }, {} as Record<string, string>)
+    } : {}
   };
 });
-
-function expressPlugin(): Plugin {
-  return {
-    name: "express-plugin",
-    apply: "serve", // Only apply during development (serve mode)
-    configureServer(server) {
-      const app = createServer();
-      // Add Express app as middleware to Vite dev server
-      server.middlewares.use(app);
-    },
-  };
-}
