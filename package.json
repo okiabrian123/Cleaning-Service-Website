@@ -5,14 +5,11 @@
   "pkg": {
     "assets": [
       "dist/client/*"
-    ],
-    "scripts": [
-      "dist/server/**/*.js"
     ]
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc && tsc -p tsconfig.server.json",
+    "build": "vite build",
     "preview": "vite preview",
     "vercel-build": "npm run build",
     "test": "vitest --run",
@@ -20,7 +17,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@vercel/node": "^4.1.8",
+    "@vercel/node": "^3.0.4",
     "dotenv": "^17.2.0",
     "express": "^4.18.2",
     "gsap": "^3.13.0",
