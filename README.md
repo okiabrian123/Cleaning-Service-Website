@@ -4,17 +4,27 @@ A modern, responsive cleaning service website built with React, TypeScript, and 
 
 ## 🌟 Live Demo
 
-**Website:** [View Live Demo](https://860625238f7842a09ffd6831739069f6-e0ddeea6a07c49588b2c995aa.fly.dev/)
+**Website:** [View Live Demo](https://cleaning-service-website-khx0wufet-okiabrian123s-projects.vercel.app)
 
 ## 📸 Screenshots
 
 ### Desktop View
 
-![Yeldy Homepage](https://via.placeholder.com/800x600/397F77/FFFFFF?text=Yeldy+Homepage)
+| Homepage | Services | Why Choose Us |
+|----------|----------|---------------|
+| ![Desktop Hero](screenshoot/dekstop/hero.png) | ![Desktop Services](screenshoot/dekstop/services.png) | ![Desktop Why Us](screenshoot/dekstop/why.png) |
+
+### Tablet View
+
+| Homepage | Services | Contact |
+|----------|----------|---------|
+| ![Tablet Hero](screenshoot/tablet/hero.png) | ![Tablet Services](screenshoot/tablet/services.png) | ![Tablet Contact](screenshoot/tablet/contact.png) |
 
 ### Mobile View
 
-![Mobile Responsive](https://via.placeholder.com/400x800/397F77/FFFFFF?text=Mobile+View)
+| Homepage | Services | Your Needs |
+|----------|----------|------------|
+| ![Mobile Hero](screenshoot/phone/hero.png) | ![Mobile Services](screenshoot/phone/services.png) | ![Mobile Your Needs](screenshoot/phone/yourneeds.png) |
 
 ## ✨ Features
 
