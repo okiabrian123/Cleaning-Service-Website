@@ -4,7 +4,7 @@ A modern, responsive cleaning service website built with React, TypeScript, and 
 
 ## 🌟 Live Demo
 
-**Website:** [View Live Demo](https://cleaning-service-website-khx0wufet-okiabrian123s-projects.vercel.app)
+**Website:** [View Live Demo](https://cleaning-service-website-mu.vercel.app)
 
 ## 📸 Screenshots
 
