@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { designImages } from "@/constants/imageMetadata";
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -37,7 +38,7 @@ export default function Hero() {
       ref={heroRef}
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url('https://api.builder.io/api/v1/image/assets/TEMP/d12d75f3a9a12a0b04ebb82b543cd641db1ab98d?width=2880')`,
+        backgroundImage: `url('${designImages.header.background.path}')`,
       }}
     >
       {/* Dark overlay */}
@@ -47,8 +48,8 @@ export default function Hero() {
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <img
           ref={logoRef}
-          src="https://api.builder.io/api/v1/image/assets/TEMP/3fd9345e8760a41feb6a82354d0e9d0057257bed?width=508"
-          alt="Yeldy Logo"
+          src={designImages.header.logo.path}
+          alt={designImages.header.logo.alt}
           className="mx-auto mb-8 w-64 h-auto"
         />
 

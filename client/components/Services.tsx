@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { designImages } from "@/constants/imageMetadata";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,26 +87,22 @@ export default function Services() {
     {
       title: "Residential Cleaning",
       description: "For those needing housekeeping for their homes.",
-      backgroundImage:
-        "https://api.builder.io/api/v1/image/assets/TEMP/cf859c18ef1cbcb4305a5789bb68fb64a45ccfe0?width=2880",
+      backgroundImage: designImages.residential.imageSquare.path,
     },
     {
       title: "Office Cleaning",
       description: "For those in need of a clean working area.",
-      backgroundImage:
-        "https://api.builder.io/api/v1/image/assets/TEMP/519e706a5abf67af30f1482326a298f62fca2b3d?width=2880",
+      backgroundImage: designImages.officeCleaning.imageSquare.path,
     },
     {
       title: "Move-in/Move-out",
       description: "For those in need of moving in or out cleaning assistance.",
-      backgroundImage:
-        "https://api.builder.io/api/v1/image/assets/TEMP/747e4cd3f5acc693a31d82d8ce3aa216288e4fa5?width=2880",
+      backgroundImage: designImages.moveInOut.serviceImage.path,
     },
     {
       title: "Airbnb Cleaning",
       description: "For those in need of providing a hospitable Airbnb home.",
-      backgroundImage:
-        "https://api.builder.io/api/v1/image/assets/TEMP/7061d3fb624cd3ea867a22bec08b763e7bc6a474?width=2880",
+      backgroundImage: designImages.airbnbCleaning.rectangle3.path,
     },
   ];
 

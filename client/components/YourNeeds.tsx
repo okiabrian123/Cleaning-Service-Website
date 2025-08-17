@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { designImages } from "@/constants/imageMetadata";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -95,25 +96,25 @@ export default function YourNeeds() {
 
   const reasons = [
     {
-      title: "Reason 1",
+      title: "Pet-Friendly Cleaning",
       description:
-        "Some paragraph text for reason number 1 as to why choosing this company is a worthy investment.",
-      icon: "https://api.builder.io/api/v1/image/assets/TEMP/d94e82e5ccc7a3d2a6d16ff8d73aa9f58b540f19?width=334",
-      iconBg: false,
+        "Safe and effective cleaning solutions that are gentle on your pets and tough on dirt and allergens.",
+      icon: designImages.yourNeeds.dog.path,
+      iconBg: true,
     },
     {
-      title: "Reason 2",
+      title: "Eco-Conscious",
       description:
-        "Some paragraph text for reason number 1 as to why choosing this company is a worthy investment.",
-      icon: "https://api.builder.io/api/v1/image/assets/TEMP/57844002a379543005e8cf07460e605f99df64eb?width=368",
-      iconBg: false,
+        "Using environmentally friendly products that are safe for your family and the planet.",
+      icon: designImages.yourNeeds.circleImage.antihistamines.path,
+      iconBg: true,
     },
     {
-      title: "Reason 3",
+      title: "Professional Service",
       description:
-        "Some paragraph text for reason number 1 as to why choosing this company is a worthy investment.",
-      icon: "https://api.builder.io/api/v1/image/assets/TEMP/2e7412963ed19cd87dae41988f3059535c0766fd?width=344",
-      iconBg: false,
+        "Trained professionals delivering thorough and reliable cleaning services every time.",
+      icon: designImages.yourNeeds.cleaning.path,
+      iconBg: true,
     },
   ];
 
@@ -132,8 +133,8 @@ export default function YourNeeds() {
             ref={subtitleRef}
             className="text-xl md:text-2xl font-normal text-white font-montserrat max-w-3xl mx-auto leading-relaxed"
           >
-            Some paragraph text that will explain the importance of such reason
-            why the user should choose this cleaning company.
+            We understand what matters most to you. Our services are designed with your needs in mind,
+            providing a clean, healthy, and comfortable environment for you and your loved ones.
           </p>
         </div>
 

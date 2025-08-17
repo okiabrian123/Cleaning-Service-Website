@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { designImages } from "@/constants/imageMetadata";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,7 +70,7 @@ export default function Contact() {
       ref={sectionRef}
       className="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
       style={{
-        backgroundImage: `url('https://api.builder.io/api/v1/image/assets/TEMP/293d173e716015e18a602b8164761bdfe79f6cd8?width=3500')`,
+        backgroundImage: `url('${designImages.contact.rectangle2.path}')`,
       }}
     >
       {/* Dark overlay */}

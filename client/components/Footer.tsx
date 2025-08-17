@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { designImages } from "@/constants/imageMetadata";
 
 export default function Footer() {
   return (
@@ -58,8 +59,8 @@ export default function Footer() {
                 aria-label="Instagram"
               >
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/097d88dea458133848845d83b2e4e8320e3643b0?width=60"
-                  alt="Instagram"
+                  src={designImages.footer.social.instagram.path}
+                  alt={designImages.footer.social.instagram.alt}
                   className="w-full h-full"
                 />
               </a>
@@ -69,8 +70,8 @@ export default function Footer() {
                 aria-label="Twitter"
               >
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/ab605a4facebed52c3947ef1efb9cacec7694a3f?width=60"
-                  alt="Twitter"
+                  src={designImages.footer.social.twitter.path}
+                  alt={designImages.footer.social.twitter.alt}
                   className="w-full h-full"
                 />
               </a>
@@ -80,8 +81,8 @@ export default function Footer() {
                 aria-label="TikTok"
               >
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/30975515022c089d2c78065da28725490a54a7e1?width=58"
-                  alt="TikTok"
+                  src={designImages.footer.social.tiktok.path}
+                  alt={designImages.footer.social.tiktok.alt}
                   className="w-full h-full"
                 />
               </a>

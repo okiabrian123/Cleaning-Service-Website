@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { designImages } from "@/constants/imageMetadata";
 
 export default function Header() {
   const headerRef = useRef<HTMLDivElement>(null);
@@ -24,9 +25,9 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/dc27e5618b1cccd062678c2bb45c292a4cdf9cd5?width=836"
-            alt="Yeldy Cleaning Services"
-            className="h-40 w-auto"
+            src={designImages.logo.yeldyGreen.path}
+            alt={designImages.logo.yeldyGreen.alt}
+            className="h-[200px] w-auto"
           />
         </div>
 

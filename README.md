@@ -4,27 +4,17 @@ A modern, responsive cleaning service website built with React, TypeScript, and 
 
 ## 🌟 Live Demo
 
-**Website:** [View Live Demo](https://cleaning-service-website-mu.vercel.app)
+**Website:** [View Live Demo](https://860625238f7842a09ffd6831739069f6-e0ddeea6a07c49588b2c995aa.fly.dev/)
 
 ## 📸 Screenshots
 
 ### Desktop View
 
-| Homepage | Services | Why Choose Us |
-|----------|----------|---------------|
-| ![Desktop Hero](screenshoot/dekstop/hero.png) | ![Desktop Services](screenshoot/dekstop/services.png) | ![Desktop Why Us](screenshoot/dekstop/why.png) |
-
-### Tablet View
-
-| Homepage | Services | Contact |
-|----------|----------|---------|
-| ![Tablet Hero](screenshoot/tablet/hero.png) | ![Tablet Services](screenshoot/tablet/services.png) | ![Tablet Contact](screenshoot/tablet/contact.png) |
+![Yeldy Homepage](https://via.placeholder.com/800x600/397F77/FFFFFF?text=Yeldy+Homepage)
 
 ### Mobile View
 
-| Homepage | Services | Your Needs |
-|----------|----------|------------|
-| ![Mobile Hero](screenshoot/phone/hero.png) | ![Mobile Services](screenshoot/phone/services.png) | ![Mobile Your Needs](screenshoot/phone/yourneeds.png) |
+![Mobile Responsive](https://via.placeholder.com/400x800/397F77/FFFFFF?text=Mobile+View)
 
 ## ✨ Features
 
@@ -97,39 +87,17 @@ A modern, responsive cleaning service website built with React, TypeScript, and 
 
 ## 🏗️ Building for Production
 
-### Development Commands
-
 ```bash
-# Start development server
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-
-# Run TypeScript type checking
-npm run typecheck
-
-# Run tests
-npm test
+npm run dev          # Start dev server with hot reload
+npm run typecheck    # Run TypeScript type checking
+npm test            # Run test suite
 ```
 
 ### Production Build
 
 ```bash
-# Build for production
-npm run build
-# or
-yarn build
-# or
-pnpm build
-
-# Preview production build locally
-npm run preview
-# or
-yarn preview
-# or
-pnpm preview
+npm run build       # Build for production
+npm start          # Start production server
 ```
 
 ### Build Output
